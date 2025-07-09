@@ -1,6 +1,6 @@
 name: 01 - Building Blocks
 on:
-    - delete #disable wf
+    workflow_dispatch:
 jobs:
     echo-hello:
         runs-on: ubuntu-latest
