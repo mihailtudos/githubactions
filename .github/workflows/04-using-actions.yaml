@@ -1,5 +1,5 @@
 name: 04 - Using Actions
-on: 
+on:
     push:
 
 jobs:
@@ -9,11 +9,11 @@ jobs:
             - name: Checkout Code
               uses: actions/checkout@v4
             - name: CD into react app folder
-              working-directory: './04-using-actions'
+              working-directory: './04-using-actions/my-app'
               run: ls -la
             - name: Setup Node
               uses: actions/setup-node@v4
-              with: 
-                node-version: 'latest'
+              with:
+                  node-version: 'latest'
             - name: Install Dependencies
               run: npm ci
