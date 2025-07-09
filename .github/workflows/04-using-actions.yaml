@@ -8,5 +8,12 @@ jobs:
         steps:
             - name: Checkout Code
               uses: actions/checkout@v4
-            - name: Printing Folders
+            - name: CD into react app folder
+              working-directory: './04-using-actions'
               run: ls -la
+            - name: Setup Node
+              uses: actions/setup-node@v4
+              with: 
+                node-version: 'latest'
+            - name: Install Dependencies
+              run: npm ci
