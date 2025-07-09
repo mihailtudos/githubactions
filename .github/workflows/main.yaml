@@ -5,7 +5,7 @@ on:
 
 jobs:
     echo-hello:
-        runs-on: ubunut-latest
+        runs-on: ubuntu-latest
         steps:
             - name: Say hello
               run: echo "Say hello" && exit 0
