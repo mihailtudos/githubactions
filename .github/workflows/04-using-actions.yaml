@@ -20,4 +20,4 @@ jobs:
               run: npm ci
             - name: Run Unit Tests
               working-directory: './04-using-actions/my-app'
-              run: next lint
+              run: npm run lint
