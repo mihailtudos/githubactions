@@ -16,4 +16,5 @@ jobs:
               with:
                   node-version: 'latest'
             - name: Install Dependencies
+              working-directory: './04-using-actions/my-app'
               run: npm ci
