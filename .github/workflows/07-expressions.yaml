@@ -20,5 +20,5 @@ jobs:
                   echo "Branch: ${{ github.ref }}"
                   echo "Branch: ${{ github.ref_name }}"
             - name: '[debug: ${{ inputs.debug }}] Print when triggered from main'
-              if: ${{ github.ref_name }} == "main" && ${{inputs.debug}} == true
+              if: ${{ github.ref_name == 'main' && inputs.debug == true }}
               run: echo "I was triggered from main"
