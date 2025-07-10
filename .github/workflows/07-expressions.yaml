@@ -1,5 +1,5 @@
 name: 07 - Using Expressions
-
+run-name: 07 - Using Expressions | DEBUG - ${{ inputs.debug && 'on' || 'off' }} 
 on:
     push:
     workflow_dispatch:
@@ -22,3 +22,5 @@ jobs:
             - name: '[debug: ${{ inputs.debug }}] Print when triggered from main'
               if: ${{ github.ref_name == 'main' && inputs.debug == true }}
               run: echo "I was triggered from main"
+            - name: Greeting
+              run: echo "Hello, world"
