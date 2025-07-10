@@ -23,6 +23,6 @@ jobs:
                   echo "Run ID: ${{ github.job }}"
                   echo "Run number: ${{github.run_number}}"
                   run
-                  echo "Show MY_WORKFLOW_VAR: $MY_WORKFLOW_VAR"
+                  echo "Show MY_WORKFLOW_VAR: ${{ vars.MY_WORKFLOW_VAR }}"
             # - name: Retrieve Variable
             #   run: echo "${{ secrets.MY_VAR }}"
