@@ -35,7 +35,7 @@ jobs:
               uses: actions/cache@v3
               with:
                 path: 13-caching/react-app/node_modules
-                key: ${{ steps.cache-key.outputs.CACHE_KEY }}
+                key: deps-node-modules-${{ steps.cache-key.outputs.CACHE_KEY }}
             - run: npm ci
               if: steps.cache.outputs.cache-hit != 'true'
     build:
